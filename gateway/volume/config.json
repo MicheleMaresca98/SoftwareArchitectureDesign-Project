@@ -1,0 +1,7 @@
+{
+	"port": 5000,
+	"debug": true,
+	"gestione_utenti_url": "http://172.21.0.1:5001",
+	"gestione_prenotazioni_url": "http://172.21.0.1:5002",
+	"requests_timeout": 2
+} 

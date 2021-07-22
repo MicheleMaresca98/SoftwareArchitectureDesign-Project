@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>Login Vaccini-Covid19</title>
+{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="/static/style/login.css" />
+{% endblock %}
+{% block body %}
+    <div id="container">
+        <div>
+            <a href="/"><h1>Sistema Prenotazione Vaccini anti Covid-19</h1></a>
+        </div>
+        <div>
+            <form class="form_box" id="formlogin" name="formlogin" method="post">
+                <input type="text" name="username" placeholder="Codice Fiscale o id operatore" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="button" name="submit_button" value="Login" onclick="formSubmit_login();">
+                <input type="checkbox" id="operatore" name="is_operatore" checked>
+                <label for="operatore">Operatore</label><br>
+                <input type="reset" name="reset_button" value="Cancella">
+                <div id="footer">
+                    <a href="/registrazione" class="registerlink">Registrati</a>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+{% block script %}
+    <script src="/static/script/login.js"></script>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>Home Vaccini-Covid19</title>
+{% endblock %}
+{% block style %}
+    <link rel="stylesheet" href="/static/style/home.css" />
+{% endblock %}
+{% block body %}
+    <div id="container">
+        <div>
+        <a href="/"><h1>Benvenuto nella piattaforma</h1></a>
+        </div>
+        <div>
+        <h3>Il portale per prenotazione e consultazione dell'appuntamento per la vaccinazione anti Covid-19</h3>
+        </div>
+        <div id="container_box">
+        <div class="box-1">
+            <img src="/static/images/vaccino.jpg" width="128px" height="67px">
+            <p><h2>PRENOTA</h2></p>
+            <br />
+            <p>Prenota qui la vaccinazione anti Covid-19</p>
+            <br />
+            <a href="/effettuaPrenotazione" class="registerlink">Vai-></a>
+
+        </div>
+
+        <div class="box-2">
+            <img src="/static/images/calendar2.jpg" width="100px" height="100px">
+            <p><h2>VISUALIZZA PRENOTAZIONE</h2></p>
+            <br />
+            <p>Puoi visualizzare qui l'appuntamento prenotato</p>
+            <br />
+            <a href="/visualizzaPrenotazione" class="registerlink">Vai-></a>
+        </div>
+        </div>
+        <div>
+        <input type="button" name="logout" value="logout" onclick="logout_user()" />
+        </div>
+    </div>
+{% endblock %}
+{% block script %}
+    <script src="/static/script/home.js"></script>
+{% endblock %}
